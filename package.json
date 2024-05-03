@@ -1,6 +1,9 @@
 {
   "devDependencies": {
-    "vite": "^5.2.10"
+    "happy-dom": "^14.7.1",
+    "polished": "^4.3.1",
+    "vite": "^5.2.10",
+    "vitest": "^1.5.3"
   },
   "scripts": {
     "dev": "vite",
