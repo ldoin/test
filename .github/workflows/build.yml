@@ -22,4 +22,4 @@ jobs:
       - name: Run tests
         run: npx vitest
       - name: Build project
-        run: npx vite build --base=/test/
+        run: npx vite build
