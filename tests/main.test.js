@@ -33,12 +33,12 @@ test('Contrast between text and background', async () => {
   // Extraire les styles des éléments
   const title = document.querySelector('h1');
   
-  const titleColor = getComputedStyle(title).color;
-  const titleBackgroundColor = getComputedStyle(title).getPropertyValue("background-color") || '#333';
+  const titleColor = window.getComputedStyle(title).color;
+  const titleBackgroundColor = window.getComputedStyle(title).getPropertyValue("background-color") || '#333';
 
   const paragraph = document.querySelector('p');
-  const paragraphColor = getComputedStyle(paragraph).color;
-  const paragraphBackgroundColor = getComputedStyle(paragraph).getPropertyValue("background-color") || '#333';
+  const paragraphColor = window.getComputedStyle(paragraph).color;
+  const paragraphBackgroundColor = window.getComputedStyle(paragraph).getPropertyValue("background-color") || '#333';
   
   
   // Assert
