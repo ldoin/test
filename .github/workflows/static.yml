@@ -35,6 +35,9 @@ jobs:
         uses: actions/setup-node@v4
       - name: Install dependencies
         run: npm ci
+      - name: Run tests
+        run: npx vitest
+        if: ${{ failure() }}
       - name: Build project
         run: npx vite build --base=/test/
       - name: Setup Pages
